@@ -1,0 +1,51 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "xcUIDBsnM_DsN6kEaweOB",
+      "type": "text",
+      "x": 213.11753336588527,
+      "y": 118.27636888292108,
+      "width": 1329.4884914822046,
+      "height": 625,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a0",
+      "roundness": null,
+      "seed": 1742893670,
+      "version": 2123,
+      "versionNonce": 1767128102,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1771484880847,
+      "link": null,
+      "locked": false,
+      "text": "Chapter 1: Introduction and Backpropogation\n\n1. Representational Learning: This technique involvs teaching the neural network to automatically extract and refine the features\nthrough hierarchical processing.\n\n2. Neural Networks are called `Self Feature Extractors` because of the ability of hidden layers to automatically extract and refine\nthe features based on the raw features provided by the previous hidden layers as input.\n\n3. Perceptron can only able to solve the problem which are linearly seperable.\n    Geometric Intuition:\n        co-ordinates of BFL = co-ordinates of BFL - (yi - yi_hat) * co-ordinates of point\n    Mathematical Intuition:\n        If you are using Hinge Loss then the activation function is Step function\n\n4. Can we just use one perceptron without OHE (Label Encoding) on multiclass classification?\n    → Problem becomes regression and the output becomes unbounded.\n\n5. If you use sigmoid activation function, Its just change the range of any unbounded variable to bounded (0 to 1) by retaining the\nunderlying destribution.\n\n6. Adding nodes in hidden layer v/s adding hidden layers:\n    Adding nodes: Increases a feature extraction and refining of that hidden layer\n    Adding hidden layers: Increases overall representational power\n\n7. Deep Neural Networks are called `Universal Function Approximator`",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Chapter 1: Introduction and Backpropogation\n\n1. Representational Learning: This technique involvs teaching the neural network to automatically extract and refine the features through hierarchical processing.\n\n2. Neural Networks are called `Self Feature Extractors` because of the ability of hidden layers to automatically extract and refine the features based on the raw features provided by the previous hidden layers as input.\n\n3. Perceptron can only able to solve the problem which are linearly seperable.\n    Geometric Intuition:\n        co-ordinates of BFL = co-ordinates of BFL - (yi - yi_hat) * co-ordinates of point\n    Mathematical Intuition:\n        If you are using Hinge Loss then the activation function is Step function\n\n4. Can we just use one perceptron without OHE (Label Encoding) on multiclass classification?\n    → Problem becomes regression and the output becomes unbounded.\n\n5. If you use sigmoid activation function, Its just change the range of any unbounded variable to bounded (0 to 1) by retaining the underlying destribution.\n\n6. Adding nodes in hidden layer v/s adding hidden layers:\n    Adding nodes: Increases a feature extraction and refining of that hidden layer\n    Adding hidden layers: Increases overall representational power\n\n7. Deep Neural Networks are called `Universal Function Approximator`",
+      "autoResize": false,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
