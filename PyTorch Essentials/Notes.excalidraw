@@ -1,0 +1,51 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "uexNDnw0qyEjwb7DjsYr2",
+      "type": "text",
+      "x": -10.690078735351562,
+      "y": 92.81770324707031,
+      "width": 599.7306671142578,
+      "height": 240.05378074271573,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a4",
+      "roundness": null,
+      "seed": 603972478,
+      "version": 860,
+      "versionNonce": 2046733950,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1772519640475,
+      "link": null,
+      "locked": false,
+      "text": "1. Tensor creation methods\n    1. torch.empty, ones, zeros, rand, tensor, arange, linspace, eye, full\n        Q. How `pin_memory = True` works bts?\n    \n    2. _like methods - The purpost of this method to create a tensor\nof the same shape as an existing input tensor.\n\n    3. to() method - [IMP] used to change the dtypes as well as\nshifting the tensor from CPU to GUP or vice-versa.\n    \n",
+      "fontSize": 17.458456781288415,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "1. Tensor creation methods\n    1. torch.empty, ones, zeros, rand, tensor, arange, linspace, eye, full\n        Q. How `pin_memory = True` works bts?\n    \n    2. _like methods - The purpost of this method to create a tensor of the same shape as an existing input tensor.\n\n    3. to() method - [IMP] used to change the dtypes as well as shifting the tensor from CPU to GUP or vice-versa.\n    \n",
+      "autoResize": false,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
