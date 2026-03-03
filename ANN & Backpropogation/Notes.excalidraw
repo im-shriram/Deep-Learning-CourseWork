@@ -1,0 +1,51 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "xcUIDBsnM_DsN6kEaweOB",
+      "type": "text",
+      "x": 1247.141763696572,
+      "y": -152.69792092448523,
+      "width": 1270.8140068150858,
+      "height": 1440.423825146838,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a0",
+      "roundness": null,
+      "seed": 1742893670,
+      "version": 6179,
+      "versionNonce": 2080952417,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1772517359548,
+      "link": null,
+      "locked": false,
+      "text": "Chapter 1: Introduction and Backpropogation\n\n1. Representational Learning: This technique involvs teaching the neural network to automatically extract and refine the features through\nhierarchical processing.\n\n2. Neural Networks are called `Self Feature Extractors` because of the ability of hidden layers to automatically extract and refine the features\nbased on the raw features provided by the previous hidden layers as input.\n\n3. Machine Learning v/s Deep Learning\n    a) Problem Solving (Interperatibility)\n    b) Data\n    c) Training\n    d) Feature Engineering\n\n3. Perceptron (Defination) can only able to solve the problem which are linearly seperable.\n\n    Geometric Intuition:\n        co-ordinates of BFL = co-ordinates of BFL - (yi - yi_hat) * co-ordinates of point\n        NOTE → As I'm decreasing the value of learning_rate (0.01 -> 0.001 -> 0.0001), the values of parameters gets more closer towards the\nactual values. → `So increase the value of epochs and decrease the value of learning rate make the GD more smooth and flexible reaching towards\nactual values of parameters.`\n\n    Mathematical Intuition:\n        If you are using Hinge Loss then the activation function is Step function (-1 or 1)\n        There is only one conditional differentation because the differentation of step function is 0,\n            So the generalized GD equation is → w_new = w_old - lr * diff (-yi*xi)\n    \n    → Perceptron code from scratch with loss - Hinge loss and optimizer - Batch GD [IMP]\n\n4. Multi-layer perceptron\n    1. Mathematical Explination for interperatibility\n    2. Define bias/intercept and what is the need of it?\n\n4. Can we just use one perceptron without OHE (Label Encoding) on multiclass classification?\n    → Problem becomes regression and the output becomes unbounded.\n\n5. If you use sigmoid activation function, Its just change the range of any unbounded variable to bounded (0 to 1) by maintaining the underlying\ndestribution.\n\n6. Adding nodes in hidden layer v/s adding hidden layers:\n    Adding nodes: Increases a feature extraction and refining of that hidden layer\n    Adding hidden layers: Increases overall representational power\n\n7. Deep Neural Networks are called `Universal Function Approximator`\n\n8. Backpropogation\n    1. Difference between loss function and cost function?\n        → Loss function (1 datapoint), Cost function (average of all the datapoints)\n\n    2. Huber Loss - The why is important\n        → It solves the disabilities of MSE and MAE\n\n    3. When to use Categorical Cross Entropy and when Sparse version\n\n    → How neural network works internally (shape of input and hidden layers output, activation function, forward propogation)\n    → The probability provided by the sigmoid function belongs to positive class.\n            Put the values in decision boundry eqn → Pass the calculated value into sigmoid → Get probability wrt +ve class.\n\n    → For a dataset of N samples, the average BCE loss is:\n            BCE = -1/N Σ[yᵢ·log(pᵢ) + (1 - yᵢ)·log(1 - pᵢ)]  \n    → In Backpropogation equation a * (1 - a) is a dot product and not a element wise multiplication\nNOTE: In matrix equation - Multiplication changed to dot product and division changed to inverse. There is no element wise multiplication of division\nunless you are doing it explicitely.\n\n    4. Backpropogation in multiclass classification (Output layer contains more than two neurons)\n        Remember the two cases (i = j and i != j) in both activation and loss differentation.",
+      "fontSize": 17.45968272905258,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Chapter 1: Introduction and Backpropogation\n\n1. Representational Learning: This technique involvs teaching the neural network to automatically extract and refine the features through hierarchical processing.\n\n2. Neural Networks are called `Self Feature Extractors` because of the ability of hidden layers to automatically extract and refine the features based on the raw features provided by the previous hidden layers as input.\n\n3. Machine Learning v/s Deep Learning\n    a) Problem Solving (Interperatibility)\n    b) Data\n    c) Training\n    d) Feature Engineering\n\n3. Perceptron (Defination) can only able to solve the problem which are linearly seperable.\n\n    Geometric Intuition:\n        co-ordinates of BFL = co-ordinates of BFL - (yi - yi_hat) * co-ordinates of point\n        NOTE → As I'm decreasing the value of learning_rate (0.01 -> 0.001 -> 0.0001), the values of parameters gets more closer towards the actual values. → `So increase the value of epochs and decrease the value of learning rate make the GD more smooth and flexible reaching towards actual values of parameters.`\n\n    Mathematical Intuition:\n        If you are using Hinge Loss then the activation function is Step function (-1 or 1)\n        There is only one conditional differentation because the differentation of step function is 0,\n            So the generalized GD equation is → w_new = w_old - lr * diff (-yi*xi)\n    \n    → Perceptron code from scratch with loss - Hinge loss and optimizer - Batch GD [IMP]\n\n4. Multi-layer perceptron\n    1. Mathematical Explination for interperatibility\n    2. Define bias/intercept and what is the need of it?\n\n4. Can we just use one perceptron without OHE (Label Encoding) on multiclass classification?\n    → Problem becomes regression and the output becomes unbounded.\n\n5. If you use sigmoid activation function, Its just change the range of any unbounded variable to bounded (0 to 1) by maintaining the underlying destribution.\n\n6. Adding nodes in hidden layer v/s adding hidden layers:\n    Adding nodes: Increases a feature extraction and refining of that hidden layer\n    Adding hidden layers: Increases overall representational power\n\n7. Deep Neural Networks are called `Universal Function Approximator`\n\n8. Backpropogation\n    1. Difference between loss function and cost function?\n        → Loss function (1 datapoint), Cost function (average of all the datapoints)\n\n    2. Huber Loss - The why is important\n        → It solves the disabilities of MSE and MAE\n\n    3. When to use Categorical Cross Entropy and when Sparse version\n\n    → How neural network works internally (shape of input and hidden layers output, activation function, forward propogation)\n    → The probability provided by the sigmoid function belongs to positive class.\n            Put the values in decision boundry eqn → Pass the calculated value into sigmoid → Get probability wrt +ve class.\n\n    → For a dataset of N samples, the average BCE loss is:\n            BCE = -1/N Σ[yᵢ·log(pᵢ) + (1 - yᵢ)·log(1 - pᵢ)]  \n    → In Backpropogation equation a * (1 - a) is a dot product and not a element wise multiplication\nNOTE: In matrix equation - Multiplication changed to dot product and division changed to inverse. There is no element wise multiplication of division unless you are doing it explicitely.\n\n    4. Backpropogation in multiclass classification (Output layer contains more than two neurons)\n        Remember the two cases (i = j and i != j) in both activation and loss differentation.",
+      "autoResize": false,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
