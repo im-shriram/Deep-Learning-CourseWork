@@ -1,0 +1,51 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "sjOrfQBxFesfY-2RSTi-z",
+      "type": "text",
+      "x": 234.11988830566406,
+      "y": -460.94348480083545,
+      "width": 1305.1486168028202,
+      "height": 616.7395900979715,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a2",
+      "roundness": null,
+      "seed": 1778670087,
+      "version": 1908,
+      "versionNonce": 224779209,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1772955182303,
+      "link": null,
+      "locked": false,
+      "text": "Chapter 2 - Improving Neural Networks\n\n1. Vanishing / Exploding Gradient Problem\n    Problem                  →   Solutions \n    Vanishing Gradient     →   ReLU/Leaky ReLU, proper initialization (Xavier/He), Batch Normalization, Skip connections (ResNets), LSTM/GRU for RNNs |\n    Exploding Gradient    →   Gradient clipping, proper initialization, lower learning rate, Batch Normalization |\n    \n2. Weight Initialization\n    → Idea behind weight initialization - we need the variance of the outputs of each layer to be equal to the\nvariance of its inputs,2 and we need the gradients to have equal variance before and\nafter flowing through a layer in the reverse direction\n\n    Technique used to initialize weight is entirely depend on the `Activation Function`\n    1. Zero Initialization:\n        `Tanh, Sigmoid, ReLU`: There is no update at all in the weights because `w` of next hidden layers are in the backpropogation eqn of lower layers.\n    2. Constant Initialization:\n        a. `Tanh, Sigmoid, ReLU`: Except 1st hidden layer, the weights assoicated to the hidden layers acts as `Perceptron` because the output of every\nsingle neuron in there respective hidden layer is same. That menas the gradients wrt those weights also going to be same.\n    3. Random Initialization:\n        a. Smaller values (less than 0.2): Vanishing Gradient\n        b. Largeer values (greater than 0.7): Exploding Gradient\n\n    4. Xavior/Glorat Initialization: Sutaible for Sigmoid and Tanh activation function\n    5. He Initialization: Sutaible for ReLU and its varients\n    6. LeCun Initialization: Sutaible for SELU activation function\n    \n→ When to use Normal varient (Deep Networks) and when uniform (Shallow Networks)?\n    \n",
+      "fontSize": 17.013505933737143,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Chapter 2 - Improving Neural Networks\n\n1. Vanishing / Exploding Gradient Problem\n    Problem                  →   Solutions \n    Vanishing Gradient     →   ReLU/Leaky ReLU, proper initialization (Xavier/He), Batch Normalization, Skip connections (ResNets), LSTM/GRU for RNNs |\n    Exploding Gradient    →   Gradient clipping, proper initialization, lower learning rate, Batch Normalization |\n    \n2. Weight Initialization\n    → Idea behind weight initialization - we need the variance of the outputs of each layer to be equal to the\nvariance of its inputs,2 and we need the gradients to have equal variance before and\nafter flowing through a layer in the reverse direction\n\n    Technique used to initialize weight is entirely depend on the `Activation Function`\n    1. Zero Initialization:\n        `Tanh, Sigmoid, ReLU`: There is no update at all in the weights because `w` of next hidden layers are in the backpropogation eqn of lower layers.\n    2. Constant Initialization:\n        a. `Tanh, Sigmoid, ReLU`: Except 1st hidden layer, the weights assoicated to the hidden layers acts as `Perceptron` because the output of every single neuron in there respective hidden layer is same. That menas the gradients wrt those weights also going to be same.\n    3. Random Initialization:\n        a. Smaller values (less than 0.2): Vanishing Gradient\n        b. Largeer values (greater than 0.7): Exploding Gradient\n\n    4. Xavior/Glorat Initialization: Sutaible for Sigmoid and Tanh activation function\n    5. He Initialization: Sutaible for ReLU and its varients\n    6. LeCun Initialization: Sutaible for SELU activation function\n    \n→ When to use Normal varient (Deep Networks) and when uniform (Shallow Networks)?\n    \n",
+      "autoResize": false,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
