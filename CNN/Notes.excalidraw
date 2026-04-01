@@ -1,0 +1,51 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "4nndkfXp9mS4_b-waQv3I",
+      "type": "text",
+      "x": 293.1432189941406,
+      "y": 156.65101623535156,
+      "width": 1221.3206787109375,
+      "height": 688.7453308908537,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a2",
+      "roundness": null,
+      "seed": 1641680877,
+      "version": 1613,
+      "versionNonce": 304553293,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1775028559422,
+      "link": null,
+      "locked": false,
+      "text": "1. Difference between ANN and CNN? What problems does CNN solve that comes in ANN\n    1. High computational cost + Lots of pixels (features) are not important → ANN does not capable of finding/handling those features\n    2. Sparsity - Overfitting\n    3. Special Arrangenment\n\n2. Concepts in CNN\n        1. Convolution Operation\n        2. Padding\n        3. Strids\n        4. Pooling and its types\n\n3. How ANN precess an image?\n→  First couple of layers detect edges and its orientation.\n    The middle layers combine those edges and detect shapes (square, triangle...). \n    The end layers try to combine those features and form a complete shape of an object\n\n4. Convolution Operation\n    ‣ Convolution Operation in 3 channeled image\n        1. The filters in the convolutional layer should also be 3 channeled.\n        2. The convolution between input image (3 channeled) and one filter (must be 3 channeled) gives 1 feature map of one channel \n\n    ‣ The shape after convolution operation\n        Single channeled image → The filters are also single channeled\n            (a, b) * (m, n) → (a + 1 - m) * (b + 1 - n)\n        `z' channeled image → The filters are also 3 channeled\n            [(a, b) * z] * {[(m, n) * z] * s} → [(a + 1 - m) * (b + 1 - n) * s] _________ (Here `s` → Number of filters)\n    \n    ‣ If there are more than one convolutional layers then [IMP]\n        The dimensions of each filter in 2nd convolution layer  = The number of filters in a 1st convolution layer\n",
+      "fontSize": 18.36654215708943,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "1. Difference between ANN and CNN? What problems does CNN solve that comes in ANN\n    1. High computational cost + Lots of pixels (features) are not important → ANN does not capable of finding/handling those features\n    2. Sparsity - Overfitting\n    3. Special Arrangenment\n\n2. Concepts in CNN\n        1. Convolution Operation\n        2. Padding\n        3. Strids\n        4. Pooling and its types\n\n3. How ANN precess an image?\n→  First couple of layers detect edges and its orientation.\n    The middle layers combine those edges and detect shapes (square, triangle...). \n    The end layers try to combine those features and form a complete shape of an object\n\n4. Convolution Operation\n    ‣ Convolution Operation in 3 channeled image\n        1. The filters in the convolutional layer should also be 3 channeled.\n        2. The convolution between input image (3 channeled) and one filter (must be 3 channeled) gives 1 feature map of one channel \n\n    ‣ The shape after convolution operation\n        Single channeled image → The filters are also single channeled\n            (a, b) * (m, n) → (a + 1 - m) * (b + 1 - n)\n        `z' channeled image → The filters are also 3 channeled\n            [(a, b) * z] * {[(m, n) * z] * s} → [(a + 1 - m) * (b + 1 - n) * s] _________ (Here `s` → Number of filters)\n    \n    ‣ If there are more than one convolutional layers then [IMP]\n        The dimensions of each filter in 2nd convolution layer  = The number of filters in a 1st convolution layer\n",
+      "autoResize": true,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
