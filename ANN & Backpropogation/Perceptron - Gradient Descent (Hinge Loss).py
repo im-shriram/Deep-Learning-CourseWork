@@ -50,7 +50,13 @@ class Perceptron:
 
                 We want -1 (missclassified records) → Thats why margin < 1
             """
-            mask = (margin < 1).astype(float) # (n, 1)
+            mask = (margin < 0).astype(float) # (n, 1)
+
+            # My Mask Formula
+            """
+                y_hat = np.where(X @ w.T + b > 0, 1, 0) # Applying step function
+                mask_1 = abs(y - y_hat)
+            """
 
             """
                 e.g. values in masks → [1, -1, 0, -1, 1, 0]
