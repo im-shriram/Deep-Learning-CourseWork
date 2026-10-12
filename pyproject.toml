@@ -3,14 +3,17 @@ name = "deep-learning"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.15"
+requires-python = ">=3.14"
 dependencies = [
     "matplotlib>=3.11.2",
     "numpy>=2.5.4",
     "pandas>=3.0.6",
     "plotly>=7.1.0",
+    "scikit-learn>=1.9.1",
     "seaborn>=0.13.2",
     "torch>=2.14.1",
+    "torchaudio>=2.11.0",
+    "torchmetrics>=1.0.3",
     "torchvision>=0.29.1",
 ]
 
@@ -24,6 +27,8 @@ build-backend = "uv_build"
 [tool.uv.sources]
 torch = { index = "pytorch-cu126" }
 torchvision = { index = "pytorch-cu126" }
+torchaudio = { index = "pytorch-cu126" }
+torchmetrics = { index = "pytorch-cu126" }
 
 [[tool.uv.index]]
 name = "pytorch-cu126"
